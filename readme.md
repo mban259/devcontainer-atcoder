@@ -12,8 +12,6 @@ C++環境構築が難しい or めんどくさい人用
 
 ### Remote - Containers インストール
 
-TODO 画像用意
-
 1. Visual Studio Codeの拡張機能タブをクリック  
 2. [Remote - Containers]("https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers")をインストール
 
@@ -48,7 +46,7 @@ $ docker run hello-world
 
 ### Download ZIP
 
-TODO 画像用意
+![download_zip](pictures/download_zip.png)
 
 1. Codeをクリック
 2. Download ZIPをクリック
@@ -56,7 +54,7 @@ TODO 画像用意
 
 ### コンテナに入る
 
-TODO 画像用意
+![open_folder_in_container](pictures/open_folder_in_container.png)
 
 1. 右下をクリック
 2. Remote-Containers: Open Folder in Container を選択
