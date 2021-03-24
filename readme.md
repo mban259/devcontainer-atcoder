@@ -64,14 +64,14 @@ TODO 画像用意
 
 ## 使い方
 
+TODO online judge tools
+
 ### 実行 (Shift+F5)
 
 1. コマンドパレットを開く(Ctrl+Shift+P)
 2. CMake: Run Without Debugging(デバッグなしで実行)を選択
 
 ### expander.py
-
-TODO online judge tools
 
 expander.pyを使用して、AtCoder以外のオンラインジャッジに提出できるコードを生成できます。
 
