@@ -69,11 +69,11 @@ TODO 画像用意
 1. コマンドパレットを開く(Ctrl+Shift+P)
 2. CMake: Run Without Debugging(デバッグなしで実行)を選択
 
-### `expander.py`
+### expander.py
 
 TODO online judge tools
 
-`expander.py`を使用して、AtCoder以外のオンラインジャッジに提出できるコードを生成できます。
+expander.pyを使用して、AtCoder以外のオンラインジャッジに提出できるコードを生成できます。
 
 1. コマンドパレットを開く(Ctrl+Shift+P)
 2. Tasks: Run Task(タスクの実行)を選択
