@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "expander.py",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "/ac-library/expander.py",
+                "main.cpp"
+            ],
+        }
+    ]
+}
