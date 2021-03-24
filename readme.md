@@ -64,8 +64,6 @@ TODO 画像用意
 
 ## 使い方
 
-TODO online judge tools
-
 ### 実行 (Shift+F5)
 
 1. コマンドパレットを開く(Ctrl+Shift+P)
