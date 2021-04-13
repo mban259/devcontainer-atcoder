@@ -26,7 +26,7 @@ C++環境構築が難しい or めんどくさい人用
 $ curl -fsSL https://get.docker.com -o get-docker.sh
 $ sudo sh get-docker.sh
 # sudoなしでも使えるようにdockerグループにユーザー追加
-$ sudo sudo usermod -aG docker $USER
+$ sudo usermod -aG docker $USER
 ```
 
 再起動する
