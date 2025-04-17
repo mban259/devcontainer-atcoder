@@ -3,19 +3,7 @@ project(atcoder VERSION 0.1.0 LANGUAGES C CXX)
 
 add_executable(atcoder main.cpp)
 
-target_compile_options(atcoder 
-    PUBLIC
-    -Wall -Wextra
-)
-
-if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-    add_compile_options(
-        -fsanitize=address,undefined
-    )
-else()
-    add_compile_options(
-        -O2 -march=native -mtune=native
-    )
-endif()
+set(CMAKE_CXX_FLAGS_DEBUG "-Wall -Wextra -fsanitize=address,undefined")
+set(CMAKE_CXX_FLAGS_RELEASE "-Wall -Wextra -O2 -march=native -mtune=native")
 
 target_compile_features(atcoder PUBLIC cxx_std_23)
