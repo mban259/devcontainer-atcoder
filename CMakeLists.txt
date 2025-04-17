@@ -8,7 +8,7 @@ add_executable(atcoder main.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -O2 -march=native -mtune=native -DEVAL")
 set(CMAKE_CXX_FLAGS_DEBUG "-fsanitize=address,undefined")
 include(CPack)

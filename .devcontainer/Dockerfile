@@ -1,5 +1,4 @@
-ARG VARIANT="bullseye"
-FROM mcr.microsoft.com/vscode/devcontainers/cpp:0-${VARIANT}
+FROM mcr.microsoft.com/devcontainers/cpp:1-debian-12
 
 ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="none"
 
@@ -11,4 +10,4 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y libboost-dev
-RUN git clone https://github.com/atcoder/ac-library.git -b v1.4
+RUN git clone https://github.com/atcoder/ac-library.git -b v1.5.1
