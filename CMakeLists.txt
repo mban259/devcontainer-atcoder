@@ -1,14 +1,21 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(atcoder)
-
-include(CTest)
-enable_testing()
+cmake_minimum_required(VERSION 3.10.0)
+project(atcoder VERSION 0.1.0 LANGUAGES C CXX)
 
 add_executable(atcoder main.cpp)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -O2 -march=native -mtune=native -DEVAL")
-set(CMAKE_CXX_FLAGS_DEBUG "-fsanitize=address,undefined")
-include(CPack)
+target_compile_options(atcoder 
+    PUBLIC
+    -Wall -Wextra
+)
+
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+    add_compile_options(
+        -fsanitize=address,undefined
+    )
+else()
+    add_compile_options(
+        -O2 -march=native -mtune=native
+    )
+endif()
+
+target_compile_features(atcoder PUBLIC cxx_std_23)
